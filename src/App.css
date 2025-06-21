@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Carousel styles */
+.carousel-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.controls button {
+  pointer-events: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-top: 1px solid #ddd;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #ddd;
+}
+
+.accordion-body {
+  padding: 15px;
+  background-color: #fafafa;
+  font-size: 14px;
+  color: #555;
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.accordion {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #f1f5f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #334155;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 24px;
+  background-color: #1e293b;
+  color: #facc15;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.accordion-header:hover {
+  background-color: #0f172a;
+}
+
+.accordion-header.active {
+  background-color: #0f172a;
+}
+
+.accordion-body {
+  padding: 18px 24px;
+  background-color: #0f172a;
+  font-size: 15px;
+  color: #e2e8f0;
+  animation: fadeIn 0.3s ease-out;
+  white-space: pre-line;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 16px;
+    padding: 14px 18px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+}

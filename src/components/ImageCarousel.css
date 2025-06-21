@@ -1,0 +1,26 @@
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carousel img {
+    width: 100%;
+    display: block;
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .arrow.left { left: 10px; }
+  .arrow.right { right: 10px; }
+  .arrow:hover {
+    background: rgba(0,0,0,0.7);
+  } 
